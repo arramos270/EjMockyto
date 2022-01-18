@@ -19,6 +19,7 @@ public class VentaServicio {
     private final VentaRepositorio ventaRepositorio;
     private final ProductoRepositorio productoRepositorio;
 
+    //Codigo y cantidad
     public Venta nuevaVenta(Map<String, Integer> productos, Cliente cliente) {
 
         // Creamos la venta
