@@ -57,9 +57,15 @@ class VentaServicioTest {
      */
     @Test
     void whenNuevaVentaClientIsNull() {
-        assertThrows(NullPointerException.class, () -> {servicioVenta.nuevaVenta(Map.of("0", 1), null);
+        assertThrows(NullPointerException.class, () -> {servicioVenta.nuevaVenta(Map.of("1", 1), null);
         });
     }
+
+    /*Correccion:
+        -Funciona entero
+        -Cuando id del producto no existe
+        -Cantidad negativa
+     */
 
     //
 
